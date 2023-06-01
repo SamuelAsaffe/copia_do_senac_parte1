@@ -27,3 +27,8 @@ body {}
 #quemsomosp h2 {
     color: #303030;
 }
+
+.tabela {
+    margin: 20px 0;
+    background-color: #f5f5f5;
+}
