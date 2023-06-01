@@ -1,12 +1,29 @@
+body {}
+
 .conselhoRegional {
     color: #778a9e;
     text-decoration: none;
+    padding-left: 8px;
 
 }
+
+.conselhoRegionalcont {
+    color: #778a9e;
+    text-decoration: none;
+    padding-left: 8px;
+    margin-left: 8px
+}
+
+#quemSomos {
+    background-color: #fcfcfc;
+    border-radius: 16px;
+}
+
 #quemsomosp {
-    abackground-color: #004a8d;
+    background-color: #fdfdfd;
     color: #5d5d5d;
 }
+
 #quemsomosp h2 {
-color: #303030;
+    color: #303030;
 }
