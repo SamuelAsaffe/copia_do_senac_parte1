@@ -1,5 +1,16 @@
-body {}
-
+main {
+    padding: 12px 0 0 0 ;
+    background-color: #004a8d!important;
+}
+.navecor {
+    background-color: #7db1f5;
+    padding: 0 !important;
+    color: #004a8d!important;
+    
+}
+.navbar {
+    padding: 0 0 8px 0 !important;
+}
 .conselhoRegional {
     color: #778a9e;
     text-decoration: none;
@@ -30,5 +41,9 @@ body {}
 
 .tabela {
     margin: 20px 0;
+    border-radius: 16px;
     background-color: #f5f5f5;
+}
+.ptabela{
+    color: #d97a08;
 }
