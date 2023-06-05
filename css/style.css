@@ -11,6 +11,10 @@ main {
 .navbar {
     padding: 0 0 8px 0 !important;
 }
+.toggler{
+    color:#d97a08 !important ;
+    background-color: #d97a08 !important;
+}
 .conselhoRegional {
     color: #778a9e;
     text-decoration: none;
