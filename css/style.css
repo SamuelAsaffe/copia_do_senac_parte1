@@ -45,9 +45,71 @@ main {
 
 .tabela {
     margin: 20px 0;
+    padding: 0 0 10px 0;
     border-radius: 16px;
     background-color: #f5f5f5;
 }
 .ptabela{
     color: #d97a08;
+}
+#localCont {
+    color:#d97a08 !important ;
+    padding: 0 0 0 15px ;
+    
+}
+#local {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    margin-bottom: 8px 0 15px 0;
+    padding: 8px 0 15px 0 ;
+}
+.contatos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 3fr;
+}
+footer {
+    background: #d97a08;
+    color: #004a8d;
+    margin: 0 0 0 0;
+    padding: 10px;
+}
+/* #subir{
+    text-decoration: none;
+    color:#d97a08;
+    background: #004a8d;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 1px 1px 15px #e4af6f ;
+} */
+#subirbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #004a8d;
+    text-decoration: none;
+    box-shadow: 1px 1px 15px #e4af6f ;
+}
+#subirbtn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #d97a08;
+    transition: margin-top 250ms;
+}
+#subirbtn:hover::after {
+    margin-top:-8px;
+}
+.prema {
+    background-color: #004a8d;
+    padding: 7px 0 7px 0;
+    border-radius: 16px;
 }
