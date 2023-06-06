@@ -13,3 +13,14 @@
 
 //     }
 // }
+
+function calcularIdade() {
+const hoje = new Date ( )
+const nasc = new Date(document.getElementById("").value)
+let idade = hoje.getFullYear() - nasc.getFullYear()
+const mes = hoje.getMonth( ) - nasc.getMonth( )
+if (mes < 0|| (mes ===0 & hoje.getDate() < nesc.getDate() ) ) {
+    idade--
+}
+
+}
