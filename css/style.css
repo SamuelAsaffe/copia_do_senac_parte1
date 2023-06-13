@@ -138,20 +138,3 @@ footer {
     padding: 7px 0 7px 0;
     border-radius: 16px;
 }
-
-/* .arroz{
-    color: blue;
-    
-}
-.feijao {
-    color: red;
-    
-} */
-.algo {
-    background-color: #004a8d;
-    .arroz{color: blue;}
-    .feijao{color: red;}
-    border-radius: 16px;
-    padding: 15px;
-    margin: 15px;
-}

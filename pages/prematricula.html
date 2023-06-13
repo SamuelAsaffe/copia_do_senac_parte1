@@ -19,7 +19,8 @@
         <header class="navecor">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid navecor">
-                    <a class="navbar-brand " href="../index.html"><img src="../img/logo_senac.png" alt=""></a>
+                    <a class="navbar-brand " id="senac" href="../index.html"><img src="../img/logo_senac.png"
+                            alt=""></a>
                     <button class="navbar-toggler toggler " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -51,23 +52,29 @@
 
         <main>
             <div class="container-fluid">
+                <h2> Pré Matrícula</h2>
                 <div class="prematricula">
-                    <!-- <h2> Pré Matrícula</h2>
-                    <input type="text" class="form-control"> -->
+                    <h4> Idade</h4>
+                    <input type="text" class="form-control" id="nascimento"
+                        placeholder="sua data de nascimento: ano, mês, dia">
+                    <button onclick="calcularIdade()">enviar</button>
+                    <p id="idadesaida"></p>
+                </div>
 
-
-                    <div class="algo">
-                        <div class="arroz">
-                            <p> arroz</p>
-                        </div>
-                        <div class="feijao">
-                            <p>feijao</p>  
-                        </div>
-                    </div>
-
-
-
-
+                <div class="salario">
+                    <h4> Salário </h4>
+                    <input type="text" class="form-control" id="salariototal"
+                        placeholder="Qual o salário total da sua familia?">
+                    <input type="text" class="form-control" id="totalpessoas"
+                        placeholder="Quantas pessoas tem na sua familia?">
+                    <button onclick="salario()">enviar</button>
+                    <p id="salariosaida"></p>
+                </div>
+                <div class="aprovado">
+                    <p id="ida"></p>
+                    <p id="sal"></p>
+                    <button onclick="calcularIdade();salario()">Enviar</button>
+                    <p id="aprovadosaida"></p>
                 </div>
 
 
@@ -97,7 +104,7 @@
                                 </p>
                                 <!-- subir -->
                                 <!-- <a id="subir" href="">&#9650;</a> -->
-                                <a id="subirbtn" class="btn" href=""></a>
+                                <a id="subirbtn" class="btn" href="#senac"></a>
                             </div>
                         </div>
                     </div>
