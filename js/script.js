@@ -15,9 +15,13 @@
 // }
 
 function calcularIdade() {
+    x = 10
+    x = 20
+
+
     const hoje = new Date()
     const nasc = new Date(document.getElementById("nascimento").value)
-    var idade = hoje.getFullYear() - nasc.getFullYear()
+    idade = hoje.getFullYear() - nasc.getFullYear()
     const mes = hoje.getMonth() - nasc.getMonth()
     if (mes < 0 || (mes === 0 && hoje.getDate() < nesc.getDate())) {
         idade--
@@ -28,7 +32,7 @@ function calcularIdade() {
 function salario() {
     saltotal = document.getElementById("salariototal").value
     totalpessoas = document.getElementById("totalpessoas").value
-    var mediasalario = saltotal / totalpessoas
+    mediasalario = saltotal / totalpessoas
     if (mediasalario <= 1980) {
         document.getElementById("salariosaida").innerText = ("média de salário atende aos requisitos por ser inferior a 1980 reais ")
     } else {
@@ -38,6 +42,7 @@ function salario() {
 
 }
 function aprovado() {
+    console.log(idade)
     document.getElementById("ida").innerText = idade
     document.getElementById("sal").innerText = mediasalario
     if ((idade > 16) && (mediasalario <= 1980)) {
