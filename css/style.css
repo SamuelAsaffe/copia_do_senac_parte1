@@ -62,7 +62,6 @@
     color: #d97a08 !important;
     padding: 0 0 0 15px;
     background-color: #004a8d !important;
-
     border-radius: 16px;
 }
 
@@ -103,6 +102,12 @@ footer {
         grid-template-rows: 1fr 1fr;
         margin-bottom: 8px 0 15px 0;
         padding: 8px 0 15px 0;
+    }
+
+    .contatos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr;
     }
 
 }
