@@ -44,7 +44,7 @@ function salario() {
 function aprovado() {
     console.log(idade)
     document.getElementById("ida").innerText = (idade + " anos de idade ")
-    document.getElementById("sal").innerText = (mediasalario.toFixed(0) + " como média salarial da família")
+    document.getElementById("sal").innerText = ("R$ " + mediasalario.toFixed(0) + " como média salarial por pessoa da família")
     if ((idade > 16) && (mediasalario <= 1980)) {
         document.getElementById("aprovadosaida").innerText = ("matricula aprovada ")
     } else {
