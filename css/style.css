@@ -1,21 +1,21 @@
 #mainindex {
-    padding: 12px 0 0 0 ;
-    background-color: #004a8d!important;
+    padding: 12px 0 0 0;
+    background-color: #004a8d !important;
 }
 
 .navecor {
     background-color: #7db1f5;
     padding: 0 !important;
-    color: #004a8d!important;
-    
+    color: #004a8d !important;
+
 }
 
 .navbar {
     padding: 0 0 8px 0 !important;
 }
 
-.toggler{
-    color:#d97a08 !important ;
+.toggler {
+    color: #d97a08 !important;
     background-color: #d97a08 !important;
 }
 
@@ -54,24 +54,35 @@
     background-color: #f5f5f5;
 }
 
-.ptabela{
+.ptabela {
     color: #d97a08;
 }
 
-#localCont {
-    color:#d97a08 !important ;
-    padding: 0 0 0 15px ;
-    
+.localCont {
+    color: #d97a08 !important;
+    padding: 0 0 0 15px;
+    background-color: #004a8d !important;
+
+    border-radius: 16px;
 }
 
-#local {
+.localContt {
+    color: #d97a08 !important;
+    padding: 0 0 0 15px;
+    margin: 5px 0 0 0;
+    background-color: #004a8d !important;
+    border-radius: 16px;
+}
+
+.local {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
     margin-bottom: 8px 0 15px 0;
-    padding: 8px 0 15px 0 ;
-    background-color: #004a8d!important;
+    padding: 8px 0 15px 0;
+
 }
+
 .contatos {
     display: grid;
     grid-template-columns: 1fr;
@@ -86,14 +97,14 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    #local {
+    .local {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         margin-bottom: 8px 0 15px 0;
-        padding: 8px 0 15px 0 ;
+        padding: 8px 0 15px 0;
     }
-    
+
 }
 
 /* #subir{
@@ -118,7 +129,7 @@ footer {
     height: 50px;
     background-color: #004a8d;
     text-decoration: none;
-    box-shadow: 1px 1px 15px #e4af6f ;
+    box-shadow: 1px 1px 15px #e4af6f;
 }
 
 #subirbtn::after {
@@ -130,7 +141,7 @@ footer {
 }
 
 #subirbtn:hover::after {
-    margin-top:-8px;
+    margin-top: -8px;
 }
 
 .prema {

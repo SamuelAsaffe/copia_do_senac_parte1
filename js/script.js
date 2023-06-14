@@ -26,25 +26,25 @@ function calcularIdade() {
     if (mes < 0 || (mes === 0 && hoje.getDate() < nesc.getDate())) {
         idade--
     }
-    document.getElementById("idadesaida").innerText = idade
+    // document.getElementById("idadesaida").innerText = idade
 }
 
 function salario() {
     saltotal = document.getElementById("salariototal").value
     totalpessoas = document.getElementById("totalpessoas").value
     mediasalario = saltotal / totalpessoas
-    if (mediasalario <= 1980) {
-        document.getElementById("salariosaida").innerText = ("média de salário atende aos requisitos por ser inferior a 1980 reais ")
-    } else {
-        document.getElementById("salariosaida").innerText = ("média de salário não atende aos requisitos por ser superior a 1980 reais ")
-    }
-    document.getElementById("salariosaida").innerText = mediasalario.toFixed(2)
+    // if (mediasalario <= 1980) {
+    //     document.getElementById("salariosaida").innerText = ("média de salário atende aos requisitos por ser inferior a 1980 reais ")
+    // } else {
+    //     document.getElementById("salariosaida").innerText = ("média de salário não atende aos requisitos por ser superior a 1980 reais ")
+    // }
+    // document.getElementById("salariosaida").innerText = mediasalario.toFixed(2)
 
 }
 function aprovado() {
     console.log(idade)
-    document.getElementById("ida").innerText = idade
-    document.getElementById("sal").innerText = mediasalario
+    document.getElementById("ida").innerText = (idade + " anos de idade ")
+    document.getElementById("sal").innerText = (mediasalario.toFixed(0) + " como média salarial da família")
     if ((idade > 16) && (mediasalario <= 1980)) {
         document.getElementById("aprovadosaida").innerText = ("matricula aprovada ")
     } else {
