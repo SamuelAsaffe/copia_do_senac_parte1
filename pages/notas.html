@@ -55,33 +55,35 @@
         <main>
             <div class="container-fluid">
                 <h2> Notas da Piramide </h2>
-                <div class="prematricula">
-                    <h4> Data de Nascimento</h4>
-                    <input type="date" class="form-control" id="nascimento"
-                        placeholder="sua data de nascimento: ano, mês, dia">
-                    <!-- <button onclick="calcularIdade()">enviar</button> -->
-                    <!-- <p id="idadesaida"></p> -->
-                </div>
+                <section id="notas" >
 
-                <div class="salario">
-                    <h4> Salário </h4>
-                    <input type="text" class="form-control" id="salariototal"
-                        placeholder="Qual o salário total da sua familia?">
-                    <input type="text" class="form-control" id="totalpessoas"
-                        placeholder="Quantas pessoas tem na sua familia?">
-                    <!-- <button onclick="salario()">enviar</button> -->
-                    <!-- <p id="salariosaida"></p> -->
-                </div>
-                <div class="aprovado">
-
-                    <button onclick="calcularIdade();salario(); aprovado()"
-                        style=" background: #004a8d; color: #d97a08;border-radius: 12px;">Enviar</button>
-                    <p class="localContt" id="ida"></p>
-                    <p class="localContt" id="sal"></p>
-                    <p id="aprovadosaida"
-                        style="color: #d97a08; padding: 0 0 0 15px; margin: 5px 0 5px 0; background-color: #004a8d ; border-radius: 16px;">
+                    <!-- div.faltas$.card*12{nota $} -->
+                    <!-- div.faltas$.card*12>h6{nota $} -->
+                    <!-- div.notas*3>input+p+buton -->
+                    <div id="notas" >
+                        <div class="notas " style="margin: 4px ;">
+                            <input style=" border-radius: 9px;" type="number" placeholder="nota 1">
+                        </div>
+                        <div class="notas " style="margin: 4px;">
+                            <input style=" border-radius: 9px;" type="number" placeholder="nota 2">
+                        </div>
+                        <div class="notas " style="margin: 4px;">
+                            <input style=" border-radius: 9px;" type="number" placeholder="nota 3">
+                        </div>
+                    </div>
+                    <p id="medianotas"
+                        style="background-color: #004a8d ; color: #e4af6f ; border-radius: 10px; padding: 2px 0 2px 10px;">
+                        asdasdf
                     </p>
-                </div>
+                    <button type="button" class="btn" onclick=""
+                        style="background-color: #e4af6f; color: #004a8d ;">enviar nota</button>
+
+                </section>
+
+
+
+
+
 
 
                 <section class="localCont" id="localcont">
