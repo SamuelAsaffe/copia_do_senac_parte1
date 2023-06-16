@@ -53,9 +53,28 @@ function aprovado() {
 
 }
 function medianotas() {
-    nota1 = document.getElementById("nota1").value.toFixed(2)
-    nota2 = document.getElementById("nota2").value.toFixed(2)
-    nota3 = document.getElementById("nota3").value.toFixed(3)
-    medianota = (nota1 + nota2 + nota3)/3
-    
+    let n1 = parseFloat(document.getElementById("nota1").value)
+    let n2 = parseFloat(document.getElementById("nota2").value)
+    let n3 = parseFloat(document.getElementById("nota3").value)
+    let media = (n1 + n2 + n3) / 3
+    document.getElementById("medianota").innerText = ("A média da sua nota é: " + media.toFixed(1))
+
+
+}
+function checkPresenca(presencaId, faltaId) {
+    var presencaRadioButton = document.getElementById(presencaId);
+    var faltaRadioButton = document.getElementById(faltaId);
+
+    if (presencaRadioButton.checked) {
+        faltaRadioButton.checked = false; // Desmarca o radio button de falta
+    }
+}
+
+function checkFalta(presencaId, faltaId) {
+    var presencaRadioButton = document.getElementById(presencaId);
+    var faltaRadioButton = document.getElementById(faltaId);
+
+    if (faltaRadioButton.checked) {
+        presencaRadioButton.checked = false; // Desmarca o radio button de presença
+    }
 }

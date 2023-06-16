@@ -58,28 +58,138 @@
                 <section id="notas">
 
                     <!-- div.faltas$.card*12{nota $} -->
-                    <!-- div.faltas$.card*12>h6{nota $} -->
+                    <!-- div.presenca$.card*12>h6{presença $} -->
                     <!-- div.notas*3>input+p+buton -->
                     <div id="notass">
                         <div class="notas " style="margin: 4px ;">
-                            <input id="#notas1" style=" border-radius: 9px;" type="number" placeholder="nota 1">
+                            <input id="nota1" style=" border-radius: 9px;" type="number" placeholder="nota 1">
                         </div>
                         <div class="notas " style="margin: 4px;">
-                            <input id="#notas2" style=" border-radius: 9px;" type="number" placeholder="nota 2">
+                            <input id="nota2" style=" border-radius: 9px;" type="number" placeholder="nota 2">
                         </div>
-                        <div  class="notas " style="margin: 4px;">
-                            <input id="#notas3" style=" border-radius: 9px;" type="number" placeholder="nota 3">
+                        <div class="notas " style="margin: 4px;">
+                            <input id="nota3" style=" border-radius: 9px;" type="number" placeholder="nota 3">
                         </div>
                     </div>
-                    <p id="medianotas"
+                    <p id="medianota"
                         style="background-color: #004a8d ; color: #e4af6f ; border-radius: 10px; padding: 2px 0 2px 10px;">
-                        asdasdf
                     </p>
-                    <button type="button" class="btn" onclick=""
+                    <button type="button" class="btn" onclick="medianotas()"
                         style="background-color: #e4af6f; color: #004a8d ;">enviar nota</button>
 
                 </section>
 
+                <section id="presenca">
+                    <div class="presensa card">
+                        <h6>Dia 1:</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd1', 'npd1')"
+                            name="pd1" id="pd1">
+                        <label class="form-check-label corp" for="pd1">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd1', 'npd1')"
+                            name="npd1" id="npd1">
+                        <label class="form-check-label corf" for="npd1">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>Dia 2:</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd2', 'npd2')"
+                            name="pd2" id="pd2">
+                        <label class="form-check-label corp" for="pd2">Presença</label>
+                        <input class="form-check-input corf " type="radio" onclick="checkFalta('pd2', 'npd2')"
+                            name="npd2" id="npd2">
+                        <label class="form-check-label corf" for="npd2">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 3</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd3', 'npd3')"
+                            name="pd3" id="pd3">
+                        <label class="form-check-label corp" for="pd3">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd3', 'npd3')"
+                            name="npd3" id="npd3">
+                        <label class="form-check-label corf" for="npd3">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 4</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd4', 'npd4')"
+                            name="pd4" id="pd4">
+                        <label class="form-check-label corp" for="pd4">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd4', 'npd4')"
+                            name="npd4" id="npd4">
+                        <label class="form-check-label corf" for="npd4">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 5</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd5', 'npd5')"
+                            name="pd5" id="pd5">
+                        <label class="form-check-label corp" for="pd5">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd5', 'npd5')"
+                            name="npd5" id="npd5">
+                        <label class="form-check-label corf" for="npd5">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 6</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd6', 'npd6')"
+                            name="pd6" id="pd6">
+                        <label class="form-check-label corp" for="pd6">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd6', 'npd6')"
+                            name="npd6" id="npd6">
+                        <label class="form-check-label corf" for="npd6">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 7</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd7', 'npd7')"
+                            name="pd7" id="pd7">
+                        <label class="form-check-label corp" for="pd7">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd7', 'npd7')"
+                            name="npd7" id="npd7">
+                        <label class="form-check-label corf" for="npd7">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 8</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd8', 'npd8')"
+                            name="pd8" id="pd8">
+                        <label class="form-check-label corp" for="pd8">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd8', 'npd8')"
+                            name="npd8" id="npd8">
+                        <label class="form-check-label corf" for="npd8">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 9</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd9', 'npd9')"
+                            name="pd9" id="pd9">
+                        <label class="form-check-label corp" for="pd9">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd9', 'npd9')"
+                            name="npd9" id="npd9">
+                        <label class="form-check-label corf" for="npd9">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 10</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd10', 'npd10')"
+                            name="pd10" id="pd10">
+                        <label class="form-check-label corp" for="pd10">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd10', 'npd10')"
+                            name="npd10" id="npd10">
+                        <label class="form-check-label corf" for="npd10">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 11</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd11', 'npd11')"
+                            name="pd11" id="pd11">
+                        <label class="form-check-label corp" for="pd11">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd11', 'npd11')"
+                            name="npd11" id="npd11">
+                        <label class="form-check-label  corf" for="npd11">Falta</label>
+                    </div>
+                    <div class="presensa card">
+                        <h6>dia 12</h6>
+                        <input class="form-check-input corp" type="radio" onclick="checkPresenca('pd12', 'npd12')"
+                            name="pd12" id="pd12">
+                        <label class="form-check-label corp" for="pd12">Presença</label>
+                        <input class="form-check-input corf" type="radio" onclick="checkFalta('pd12', 'npd12')"
+                            name="npd12" id="npd12">
+                        <label class="form-check-label corf" for="npd12">Falta</label>
+                    </div>
+
+                </section>
 
 
 

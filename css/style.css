@@ -163,8 +163,21 @@ footer {
     }
 }
 
+#presenca {
+    margin-top: 19px;
+}
+
 /* #notass {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
 } */
+@media screen and (min-width: 1px) {
+    .presensa {
+        display: grid !important;
+        grid-template-columns: 1fr 0.1fr 1fr 0.1fr 1fr !important;
+        grid-template-rows: 1fr !important;
+    }
+
+
+}
