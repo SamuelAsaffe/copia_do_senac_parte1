@@ -52,3 +52,10 @@ function aprovado() {
     }
 
 }
+function medianotas() {
+    nota1 = document.getElementById("nota1").value.toFixed(2)
+    nota2 = document.getElementById("nota2").value.toFixed(2)
+    nota3 = document.getElementById("nota3").value.toFixed(3)
+    medianota = (nota1 + nota2 + nota3)/3
+    
+}
