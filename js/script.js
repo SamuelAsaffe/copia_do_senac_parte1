@@ -14,6 +14,7 @@
 //     }
 // }
 
+
 function calcularIdade() {
     x = 10
     x = 20
@@ -61,20 +62,60 @@ function medianotas() {
 
 
 }
+
+totalPresencas= 0
+ct=0
 function checkPresenca(presencaId, faltaId) {
     var presencaRadioButton = document.getElementById(presencaId);
     var faltaRadioButton = document.getElementById(faltaId);
+    document.getElementById("msgpresenca").innerText= ("")
+    
 
     if (presencaRadioButton.checked) {
-        faltaRadioButton.checked = false; // Desmarca o radio button de falta
+        faltaRadioButton.checked = false // Desmarca o radio button de falta
+        totalPresencas++
+        
+        if (totalPresencas > 12){
+            totalPresencas = 0
+            ct++
+            document.getElementById("msgpresenca").innerText= ("para de tentar trapacear e faz direito, ja foi "+ct+" tentativa(s)")
+            if (ct >= 5){
+            
+                document.getElementById("msgpresenca").innerText= ("Tu é percistenbte em")
+                
+            }
+        }
+        
+        document.getElementById("ttlpresenca").innerText= totalPresencas
+        // ppresenca=((100/12)*totalpresenca)
+        // document.getElementById("presenca").innerText= (totalPresencas+'% de presença')
+        perpresenca =((100/12)*totalPresencas).toFixed(1)
+        document.getElementById("ppresenca").innerText= (perpresenca +"% de presença")
     }
+    
+    
+
 }
 
 function checkFalta(presencaId, faltaId) {
-    var presencaRadioButton = document.getElementById(presencaId);
-    var faltaRadioButton = document.getElementById(faltaId);
+    var presencaRadioButton = document.getElementById(presencaId)
+    var faltaRadioButton = document.getElementById(faltaId)
+    
 
     if (faltaRadioButton.checked) {
-        presencaRadioButton.checked = false; // Desmarca o radio button de presença
+        presencaRadioButton.checked = false // Desmarca o radio button de presença
+        totalPresencas--
+        if (totalPresencas < 0){
+            totalPresencas = 0
+        }
+        document.getElementById("ttlpresenca").innerText= totalPresencas
+        perpresenca =((100/12)*totalPresencas).toFixed(1)
+        document.getElementById("ppresenca").innerText= (perpresenca +"% de presença")    }
+}
+function verifCOndi() {
+if (perpresenca >=75) {
+    if (media >= 6) {
+        
     }
+}
 }
